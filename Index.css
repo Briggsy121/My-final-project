@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*This defines the outline of the box*/
+    scroll-behavior: smooth;
+    font-family: 'Montserrat';
+    list-style: none;
+    /*scroll behaviour determines how the scroll wheel will behave */
+    text-decoration:none;
+}
+header{
+    position: fixed;
+    width: 400%;
+    top: 100px; ;
+    /*this will determine where the title is */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px;
+    /*this defines the properties above to the title of the website*/
+}
+.logo img{
+    max-width: 120px;
+    height: auto;
+    /*this defines the size of the logo i have used */
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    /*Text transformation adjusts the size according to what is stated */
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+    /*the font weight refers to the boldness of the text*/
+}
+.navmenu a:hover{
+    color: brown;
+    /*this is used to provide an alternate colour when you hover over any of the 5 buttons*/
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+    /*this shows where he symbols will be inputted*/
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: blue;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+    /*this shows what color the letters will be alongside its size*/
+}
+.nav-icon i :hover {
+    transform: scale(1.1);
+    color: black;
+}
+/* this shows the color when hover over the shop now button*/
+#menu-icon{
+    font-size: 35px;
+    color: blanchedalmond;
+    z-index: 10001;
+    cursor: pointer;
+}
+/*this shows what the search icons will look like */
+section{
+    padding: 5% 10%;
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://favpng.com/png_view/fashion-model-dress-clothing-sequin-png/nN4mDnL4);
+    background-position: center;
+    /*this will display a background image and the properties above will be attached to the image*/
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center
+    /*this relates to the above comment and will define where the image is positioned */
+}
+.main-text h4{
+    color: red;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    /*this is used to define the subtitle text and add extra properties to it */
+}
+.main-text h1{
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0  10px;
+}
+/*this is used to define the title for the website and add properties to it*/
+.main-text p{
+    color: grey;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+    /*this code is used for the second subtitle */
+}
+.main-btn{
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+    /*this is used to add additonal properties */
+}
+.main-btn:hover{
+    background-color: #000;
+    color: white;
+    /*this is used to design the button and change its colours when hovering over it */
+}
+.main-btn i{
+    vertical-align: middle;
+}
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+/* this is used to position the down arrow */
+.down i{
+    font-size: 30px;
+    color: blue;
+    border:2px solid  black;
+    border-radius: 50px;
+    padding: 12px 12px;   
+}
+/*this will be the background for the down arrow  */
+.down i:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: all .42s ease;
+}
+/*this will be the down arrow background when hovering */
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+} /*this is used to alter the design for the header */
+
+/*trending-section-css */
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px; 
+}/* this is used for the title of trending products and adjusting its properties*/
+.center-text span{
+    color: red;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(160px, auto-fit))
+    /*this is used to have the products displayed on the on the webpage*/
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+/*this is used to define where the image will be set up*/
+.row img{
+    width: 100;
+    height: auto;
+    transition: all ,40s;
+    /*this is used to adjust the size of the images to fit the screen*/
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: black;
+    font-size: 12px;
+    /*this is used for the title of each item of clothing */
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: green;
+    padding: 3px 10px;
+    border-radius: 2px;
+/*this is used for the tag half price */
+}
+.heart-icon{
+    position: absolute;
+    top: 5px;
+    font-size: 20px;
+    /*this is used for the heart icon in the top left of the picture*/
+}
+.heart-icon:hover{
+    color: red;
+}/*this will adjust the colour of the heart when hovering */
+.ratting i{
+color:red;
+font-size: 18px;
+/*this used for the colour of the rating*/
+}
+.price h4{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    /*this is used for the items */
+}
+.price p{
+    color: blue;
+    font-size: 14px;
+    font-weight:600;
+}/*this is used for the price tag*/
+.client-reviews{
+    background-color: white;
+}
+.reviews{
+    text-align: center;
+}
+.reviews h4{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}/*this is used for the reviews section to adjust properties*/ 
+.reviews img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0 ;
+} /* this is used for the image in the review to make it relative to the image */
+.reviews p{
+    color: beige;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+/* this is used for the text in thhe review section*/
+.reviews h2{
+    font-size: 22px;
+    
+}

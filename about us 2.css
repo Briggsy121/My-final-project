@@ -1,0 +1,71 @@
+/* Reset default margin, padding, and set box-sizing for all elements */
+*{
+    margin: 0px; /* Removes default margin */
+    padding: 0px; /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border in the element's total width/height */
+    font-family: Arial, Helvetica, sans-serif; /* Sets default font family for all text */
+}
+
+/* Body styling */
+body{
+    background: whitesmoke; /* Light grey background color for the body */
+}
+
+/* Styling for the heading section */
+.heading{
+    width: 90%; /* Sets the width to 90% of the parent container */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stacks content vertically */
+    text-align: center; /* Centers text */
+    margin: 20px auto; /* Adds margin at the top and bottom, auto centers horizontally */
+}
+
+/* Styling for the h1 element within the heading */
+.heading h1{
+    font-size: 50px; /* Large font size for the heading */
+    color: black; /* Text color is black */
+    margin-bottom: 25px; /* Adds space below the heading */
+    position: relative; /* Allows positioning of the pseudo-element (::after) */
+}
+
+/* Adds a line below the heading using a pseudo-element */
+.heading h1::after{
+    content: ""; /* Creates an empty content for the pseudo-element */
+    position: absolute; /* Positions the pseudo-element absolutely */
+    width: 100%; /* Full width of the parent h1 element */
+    height: 4px; /* Thickness of the line */
+    display: block; /* Makes it a block element */
+    margin: 0 auto; /* Centers the line horizontally */
+    background-color: grey; /* Grey color for the line */
+}
+
+/* Styling for the paragraph inside the heading */
+.heading p{
+    font-size: 16px; /* Sets the font size */
+    color: black; /* Text color is black */
+    margin-bottom: 35px; /* Adds space below the paragraph */
+}
+
+/* Container for the main content */
+.container{
+    width: 90%; /* Sets the width to 90% of the parent container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 10px 20px; /* Adds padding inside the container */
+}
+
+/* Flexbox layout for the About section */
+.About{
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Spreads items out with space between them */
+    align-items: center; /* Vertically aligns items to the center */
+    flex-wrap: wrap; /* Allows items to wrap onto a new line if necessary */
+}
+
+/* Styling for the image section in the About section */
+.About-image{
+    flex: 1; /* Each image takes up equal space */
+    margin-right: 40px; /* Adds space to the right of the image */
+    overflow: hidden; /* Hides any part of the image that overflows its container */
+}
